@@ -13,6 +13,6 @@ For Table views containing lots of information. This is a neat way to present wh
   s.source           = { :git => 'https://github.com/fallaha13/CAFExpand.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '9.0'
-  s.source_files = 'CAFExpand/*.{swift,plist,h}'
+  s.source_files = 'CAFExpand/*.{swift}'
  
 end
