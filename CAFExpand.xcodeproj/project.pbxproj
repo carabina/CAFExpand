@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A4021E951DC24CA000C836E4 /* CAFExpand.h in Headers */ = {isa = PBXBuildFile; fileRef = A4021E931DC24CA000C836E4 /* CAFExpand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4021E9C1DC254D000C836E4 /* CAFExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4021E9B1DC254D000C836E4 /* CAFExpand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4021E901DC24CA000C836E4 /* CAFExpand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CAFExpand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4021E931DC24CA000C836E4 /* CAFExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAFExpand.h; sourceTree = "<group>"; };
 		A4021E941DC24CA000C836E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4021E9B1DC254D000C836E4 /* CAFExpand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFExpand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				A4021E931DC24CA000C836E4 /* CAFExpand.h */,
+				A4021E9B1DC254D000C836E4 /* CAFExpand.swift */,
 				A4021E941DC24CA000C836E4 /* Info.plist */,
 			);
 			path = CAFExpand;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					A4021E8F1DC24CA000C836E4 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4021E9C1DC254D000C836E4 /* CAFExpand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +244,7 @@
 		A4021E991DC24CA000C836E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +256,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.CAFExpand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +264,7 @@
 		A4021E9A1DC24CA000C836E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
